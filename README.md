@@ -70,6 +70,12 @@ For an alternative dark color theme, please have a look at Ross Churchley's
 excellent [owl](https://github.com/rchurchley/beamercolortheme-owl) theme.
 
 
+## GMAO
+
+The theme is modified to include a NASA logo and GMAO footer and is limited for
+use by NASA/GSFC/GMAO personnel only.  Use of this modification by any other
+entity is strictly forbidden.
+
 ## License
 
 The theme itself is licensed under a [Creative Commons Attribution-ShareAlike
