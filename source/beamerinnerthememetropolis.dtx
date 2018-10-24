@@ -99,10 +99,13 @@
 % \begin{macro}{title page}
 % Template for the title page. Each element is only typset if it is defined
 % by the user. If |\subtitle| is empty, for example, it won't leave a blank
-% space on the title slide.
+% space on the title slide. We are including a NASA header and logo on the
+% title page.
 %    \begin{macrocode}
 \setbeamertemplate{title page}{
   \begin{minipage}[b][\paperheight]{\textwidth}
+    \nasaheader%
+    \nasalogo%
     \ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
     \vfill%
     \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi

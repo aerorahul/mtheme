@@ -35,6 +35,34 @@
 %    \begin{macrocode}
 \RequirePackage{etoolbox}
 \RequirePackage{pgfopts}
+\RequirePackage{tikz}
+\usetikzlibrary{positioning,shapes.geometric,arrows}
+%    \end{macrocode}
+%
+%
+%
+% \subsubsection{GMAO specifics}
+%
+% NASA and GMAO related modifications to the \themename theme such as NASA
+% logo, GMAO in the footer, etc. go here.
+%
+%    \begin{macrocode}
+\newcommand{\nasalogo}{
+  \begin{tikzpicture}[overlay, remember picture]
+      \node[anchor=north east,xshift=-0.125cm,yshift=-0.125cm] at (current page.north east) {\includegraphics[width=1cm]{nasa.pdf}};
+  \end{tikzpicture}
+}
+\newcommand{\nasaheader}{
+  \begin{tikzpicture}[overlay, remember picture]
+      \node[anchor=north west,xshift=0.2cm,yshift=-0.4cm] at (current page.north west) {\tiny{National Aeronautics and Space Administration}};
+  \end{tikzpicture}
+}
+\newcommand{\gmaofooter}{
+  \parbox[b]{0.75cm}{\bfseries{\framebox[1.1\width]{GMAO}}}
+  \ \ % add space between GMAO box and text
+  \parbox[c]{4cm}{\tiny\bfseries{Global Modeling and Assimilation Office} \\%
+                          \mdseries{gmao.gsfc.nasa.gov}}
+}
 %    \end{macrocode}
 %
 %

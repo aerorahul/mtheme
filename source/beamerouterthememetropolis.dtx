@@ -131,6 +131,7 @@
 \defbeamertemplate{footline}{plain}{%
   \begin{beamercolorbox}[wd=\textwidth, sep=3ex]{footline}%
     \usebeamerfont{page number in head/foot}%
+    \setbeamertemplate{frame footer}{\gmaofooter}
     \usebeamertemplate*{frame footer}
     \hfill%
     \usebeamertemplate*{frame numbering}
@@ -168,6 +169,7 @@
       leftskip=\metropolis@frametitle@padding,%
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
+  \nasalogo%
   \metropolis@frametitlestrut@start%
   \insertframetitle%
   \nolinebreak%
