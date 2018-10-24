@@ -112,6 +112,8 @@
 %    \begin{macrocode}
 \defbeamertemplate{frame footer}{none}{}
 \defbeamertemplate{frame footer}{custom}[1]{ #1 }
+\defbeamertemplate{gmao footer}{none}{}
+\defbeamertemplate{gmao footer}{custom}[1]{ #1 }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -131,7 +133,7 @@
 \defbeamertemplate{footline}{plain}{%
   \begin{beamercolorbox}[wd=\textwidth, sep=3ex]{footline}%
     \usebeamerfont{page number in head/foot}%
-    \setbeamertemplate{frame footer}{\gmaofooter}
+    \usebeamertemplate{gmao footer}{\gmaofooter}
     \usebeamertemplate*{frame footer}
     \hfill%
     \usebeamertemplate*{frame numbering}
