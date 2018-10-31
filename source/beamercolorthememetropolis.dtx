@@ -81,6 +81,8 @@
 \definecolor{mDarkTeal}{HTML}{23373b}
 \definecolor{mLightBrown}{HTML}{EB811B}
 \definecolor{mLightGreen}{HTML}{14B03D}
+\definecolor{mGray}{HTML}{7D807F}
+\definecolor{mWhite}{HTML}{FFFFFF}
 %    \end{macrocode}
 %
 %
@@ -101,7 +103,7 @@
 \newcommand{\metropolis@colors@light}{
   \setbeamercolor{normal text}{%
     fg=mDarkTeal,
-    bg=black!2
+    bg=white!2
   }
 }
 \setbeamercolor{alerted text}{%
@@ -142,7 +144,11 @@
 }
 \setbeamercolor{frametitle}{%
   use=palette primary,
-  parent=palette primary
+  parent=palette primary,
+  bg=mWhite,fg=mDarkTeal
+}
+\setbeamercolor{footline}{%
+  bg=mGray,fg=mWhite
 }
 %    \end{macrocode}
 %
