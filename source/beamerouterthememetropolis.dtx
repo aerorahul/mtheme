@@ -167,16 +167,16 @@
   \nointerlineskip%
   \begin{beamercolorbox}[%
       wd=\paperwidth,%
-      sep=0pt,%
-      leftskip=\metropolis@frametitle@padding,%
-      rightskip=\metropolis@frametitle@padding,%
+      sep=\metropolis@frametitle@padding,%
+      center,%
     ]{frametitle}%
-  \nasalogo%
   \metropolis@frametitlestrut@start%
   \insertframetitle%
   \nolinebreak%
   \metropolis@frametitlestrut@end%
   \end{beamercolorbox}%
+  \nasaheader%
+  \nasalogo%
 }
 \setbeamertemplate{frametitle continuation}{%
   \usebeamerfont{frametitle}
